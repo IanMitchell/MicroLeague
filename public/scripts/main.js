@@ -160,7 +160,7 @@ $(document).ready(function() {
   team_1_champions["Dyrus"] = "Olaf";
   team_1_champions["TheOddOne"] = "Maokai";
   team_1_champions["Chaox"] = "Corki";
-  team_1_champions["XSpecial"] = "Sona";
+  team_1_champions["Xpecial"] = "Sona";
   team_1_champions["Regi"] = "Karthus";
   
   team_2_champions["Froggen"] = "Anivia";
@@ -205,11 +205,11 @@ $(document).ready(function() {
     $("#team-1-chaox-submit").attr("disabled", "true");
   });
   
-  $("#team-1-xspecial-submit").click(function() {
-    team_1_champions["XSpecial"] = $("#team-1-xspecial option:selected").text();
-    prepCard("Champion Selection", "XSpecial has chosen " + team_1_champions["XSpecial"]);
-    $("#team-1-xspecial").attr("disabled", "true");
-    $("#team-1-xspecial-submit").attr("disabled", "true");
+  $("#team-1-xpecial-submit").click(function() {
+    team_1_champions["Xpecial"] = $("#team-1-xpecial option:selected").text();
+    prepCard("Champion Selection", "Xpecial has chosen " + team_1_champions["Xpecial"]);
+    $("#team-1-xpecial").attr("disabled", "true");
+    $("#team-1-xpecial-submit").attr("disabled", "true");
   });
   
   $("#team-1-regi-submit").click(function() {
