@@ -186,35 +186,35 @@ $(document).ready(function() {
   // Team 1 Champ Selection Handlers
   $("#team-1-dyrus-submit").click(function() {
     team_1_champions["Dyrus"] = $("#team-1-dyrus option:selected").text();
-    prepCard("Champion Selection", "Dyrus has chosen " + team_1_champions["Dyrus"]);
+    prepCard("Champion Selection", "<strong class='blue'>Dyrus</strong> has chosen " + team_1_champions["Dyrus"]);
     $("#team-1-dyrus").attr("disabled", "true");
     $("#team-1-dyrus-submit").attr("disabled", "true");
   });
   
   $("#team-1-theoddone-submit").click(function() {
     team_1_champions["TheOddOne"] = $("#team-1-theoddone option:selected").text();
-    prepCard("Champion Selection", "TheOddOne has chosen " + team_1_champions["TheOddOne"]);
+    prepCard("Champion Selection", "<strong class='blue'>TheOddOne</strong> has chosen " + team_1_champions["TheOddOne"]);
     $("#team-1-theoddone").attr("disabled", "true");
     $("#team-1-theoddone-submit").attr("disabled", "true");
   });
   
   $("#team-1-chaox-submit").click(function() {
     team_1_champions["Chaox"] = $("#team-1-chaox option:selected").text();
-    prepCard("Champion Selection", "Chaox has chosen " + team_1_champions["Chaox"]);
+    prepCard("Champion Selection", "<strong class='blue'>Chaox</strong> has chosen " + team_1_champions["Chaox"]);
     $("#team-1-chaox").attr("disabled", "true");
     $("#team-1-chaox-submit").attr("disabled", "true");
   });
   
   $("#team-1-xpecial-submit").click(function() {
     team_1_champions["Xpecial"] = $("#team-1-xpecial option:selected").text();
-    prepCard("Champion Selection", "Xpecial has chosen " + team_1_champions["Xpecial"]);
+    prepCard("Champion Selection", "<strong class='blue'>Xpecial</strong> has chosen " + team_1_champions["Xpecial"]);
     $("#team-1-xpecial").attr("disabled", "true");
     $("#team-1-xpecial-submit").attr("disabled", "true");
   });
   
   $("#team-1-regi-submit").click(function() {
     team_1_champions["regi"] = $("#team-1-regi option:selected").text();
-    prepCard("Champion Selection", "Regi has chosen " + team_1_champions["regi"]);
+    prepCard("Champion Selection", "<strong class='blue'>Regi</strong> has chosen " + team_1_champions["regi"]);
     $("#team-1-regi").attr("disabled", "true");
     $("#team-1-regi-submit").attr("disabled", "true");
   });
@@ -225,35 +225,35 @@ $(document).ready(function() {
   // Team 2 Champ Selection Handlers
   $("#team-2-froggen-submit").click(function() {
     team_2_champions["Froggen"] = $("#team-2-froggen option:selected").text();
-    prepCard("Champion Selection", "Froggen has chosen " + team_2_champions["Froggen"]);
+    prepCard("Champion Selection", "<strong class='purple'>Froggen</strong> has chosen " + team_2_champions["Froggen"]);
     $("#team-2-froggen").attr("disabled", "true");
     $("#team-2-froggen-submit").attr("disabled", "true");
   });
   
     $("#team-2-wickd-submit").click(function() {
     team_2_champions["Wickd"] = $("#team-2-wickd option:selected").text();
-    prepCard("Champion Selection", "Wickd has chosen " + team_2_champions["Wickd"]);
+    prepCard("Champion Selection", "<strong class='purple'>Wickd</strong> has chosen " + team_2_champions["Wickd"]);
     $("#team-2-wickd").attr("disabled", "true");
     $("#team-2-wickd-submit").attr("disabled", "true");
   });
   
     $("#team-2-krepo-submit").click(function() {
     team_2_champions["Krepo"] = $("#team-2-krepo option:selected").text();
-    prepCard("Champion Selection", "Krepo has chosen " + team_2_champions["Krepo"]);
+    prepCard("Champion Selection", "<strong class='purple'>Krepo</strong> has chosen " + team_2_champions["Krepo"]);
     $("#team-2-krepo").attr("disabled", "true");
     $("#team-2-krepo-submit").attr("disabled", "true");
   });
   
     $("#team-2-yellowpete-submit").click(function() {
     team_2_champions["YellowPete"] = $("#team-2-yellowpete option:selected").text();
-    prepCard("Champion Selection", "YellowPete has chosen " + team_2_champions["YellowPete"]);
+    prepCard("Champion Selection", "<strong class='purple'>YellowPete</strong> has chosen " + team_2_champions["YellowPete"]);
     $("#team-2-yellowpete").attr("disabled", "true");
     $("#team-2-yellowpete-submit").attr("disabled", "true");
   });
   
     $("#team-2-snoopeh-submit").click(function() {
     team_2_champions["Snoopeh"] = $("#team-2-snoopeh option:selected").text();
-    prepCard("Champion Selection", "Snoopeh has chosen " + team_2_champions["Snoopeh"]);
+    prepCard("Champion Selection", "<strong class='purple'>Snoopeh</strong> has chosen " + team_2_champions["Snoopeh"]);
     $("#team-2-snoopeh").attr("disabled", "true");
     $("#team-2-snoopeh-submit").attr("disabled", "true");
   });
@@ -264,37 +264,37 @@ $(document).ready(function() {
   
   // Handlers for Bans
   $("#team-1-ban-1-submit").click(function() {
-    prepCard("Champion Banned", $("#team-1-ban-1 option:selected").text() + " has been banned by " + $("#team-1 option:selected").text());
+    prepCard("Champion Banned", $("#team-1-ban-1 option:selected").text() + " has been banned by <strong class='blue'>" + $("#team-1 option:selected").text() + "</strong>");
     $("#team-1-ban-1").attr("disabled", "true");
     $("#team-1-ban-1-submit").attr("disabled", "true");
   });
   
   $("#team-1-ban-2-submit").click(function() {
-    prepCard("Champion Banned", $("#team-1-ban-2 option:selected").text() + " has been banned by " + $("#team-1 option:selected").text());
+    prepCard("Champion Banned", $("#team-1-ban-2 option:selected").text() + " has been banned by <strong class='blue'>" + $("#team-1 option:selected").text() + "</strong>");
     $("#team-1-ban-2").attr("disabled", "true");
     $("#team-1-ban-2-submit").attr("disabled", "true");
   });
   
   $("#team-1-ban-3-submit").click(function() {
-    prepCard("Champion Banned", $("#team-1-ban-3 option:selected").text() + " has been banned by " + $("#team-1 option:selected").text());
+    prepCard("Champion Banned", $("#team-1-ban-3 option:selected").text() + " has been banned by <strong class='blue'>" + $("#team-1 option:selected").text() + "</strong>");
     $("#team-1-ban-3").attr("disabled", "true");
     $("#team-1-ban-3-submit").attr("disabled", "true");
   });
   
   $("#team-2-ban-1-submit").click(function() {
-    prepCard("Champion Banned", $("#team-2-ban-1 option:selected").text() + " has been banned by " + $("#team-2 option:selected").text());
+    prepCard("Champion Banned", $("#team-2-ban-1 option:selected").text() + " has been banned by <strong class='purple'>" + $("#team-2 option:selected").text() + "</strong>");
     $("#team-2-ban-1").attr("disabled", "true");
     $("#team-2-ban-1-submit").attr("disabled", "true");
   });
   
   $("#team-2-ban-2-submit").click(function() {
-    prepCard("Champion Banned", $("#team-2-ban-2 option:selected").text() + " has been banned by " + $("#team-2 option:selected").text());
+    prepCard("Champion Banned", $("#team-2-ban-2 option:selected").text() + " has been banned by <strong class='purple'>" + $("#team-2 option:selected").text() + "</strong>");
     $("#team-2-ban-2").attr("disabled", "true");
     $("#team-2-ban-2-submit").attr("disabled", "true");
   });
   
   $("#team-2-ban-3-submit").click(function() {
-    prepCard("Champion Banned", $("#team-2-ban-3 option:selected").text() + " has been banned by " + $("#team-2 option:selected").text());
+    prepCard("Champion Banned", $("#team-2-ban-3 option:selected").text() + " has been banned by <strong class='purple'>" + $("#team-2 option:selected").text() + "</strong>");
     $("#team-2-ban-3").attr("disabled", "true");
     $("#team-2-ban-3-submit").attr("disabled", "true");
   });
@@ -308,14 +308,14 @@ $(document).ready(function() {
   // Handlers for Kill
   $("#team-1-kill").click(function() {
     updateKills(1, 
-      $("#team-1-player-1-list option:selected").text() + " (" + team_1_champions[$("#team-1-player-1-list option:selected").text()] + ")", 
-      $("#team-1-player-2-list option:selected").text()  + " (" + team_2_champions[$("#team-1-player-2-list option:selected").text()] + ")");
+      "<strong class='blue'>" + $("#team-1-player-1-list option:selected").text() + " (" + team_1_champions[$("#team-1-player-1-list option:selected").text()] + ")</strong>", 
+      "<strong class='purple'>" + $("#team-1-player-2-list option:selected").text()  + " (" + team_2_champions[$("#team-1-player-2-list option:selected").text()] + ")</strong>");
   });
   
   $("#team-2-kill").click(function() {
     updateKills(2, 
-      $("#team-2-player-1-list option:selected").text() + " (" + team_2_champions[$("#team-2-player-1-list option:selected").text()] + ")", 
-      $("#team-2-player-2-list option:selected").text() + " (" + team_1_champions[$("#team-2-player-2-list option:selected").text()] + ")");
+      "<strong class='purple'>" + $("#team-2-player-1-list option:selected").text() + " (" + team_2_champions[$("#team-2-player-1-list option:selected").text()] + ")</strong>", 
+      "<strong class='blue'>" + $("#team-2-player-2-list option:selected").text() + " (" + team_1_champions[$("#team-2-player-2-list option:selected").text()] + ")</strong>");
   });
   
   
