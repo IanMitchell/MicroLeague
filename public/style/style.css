@@ -3,6 +3,10 @@
   margin: 0px;
 }
 
+a img {
+  border: 0px;
+}
+
 body {
   font-family: helvetica;
   font-size: 16px;
