@@ -1,0 +1,2105 @@
+<!doctype html>
+<html>
+<head>
+
+
+  <!-- Developed by Ian Mitchell -->
+  <!-- @IanMitchel1 -->
+  <!-- http://ianmitchel1.com -->
+  <!-- ian.mitchel1@live.com -->
+
+  <title>LoL Live Blog Prototype</title>
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="style/style.css" media="screen">
+  
+  <!-- JS -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="scripts/main.js"></script>
+  
+</head>
+<body>
+
+<header>
+  <h1>LoL Live Blog Prototype</h1>
+  <ul>
+    <li><a href="#">About</a></li>
+  </ul>
+</header>
+
+
+<section id="admin" class="left">
+  <h2>Admin Interface</h2>
+  
+  
+  <div id="admin-pregame" class="box">
+    <div class="box-head">
+      <h3>Pregame</h3>
+      <a href="#" id="pregame-visibility">
+        <img src="style/arrow-up.png" />
+      </a>
+    </div>
+    <div id="admin-pregame-content">
+      <div class="team-1">
+        <label>Team 1 (Blue):</label>
+        <select id="team-1">
+          <option>TSM</option>
+        </select>
+        
+        <br />
+        <br />
+        
+        <label>Ban 1:</label>
+        <select id="team-1-ban-1">
+        <option>Ahri</option>
+        <option>Akali</option>
+        <option>Alistar</option>
+        <option>Amumu</option>
+        <option>Anivia</option>
+        <option>Annie</option>
+        <option>Ashe</option>
+        <option>Blitzcrank</option>
+        <option>Brand</option>
+        <option>Caitlyn</option>
+        <option>Cassiopeia</option>
+        <option>Cho'Gath</option>
+        <option>Corki</option>
+        <option>Darius</option>
+        <option>Diana</option>
+        <option>Dr. Mundo</option>
+        <option>Draven</option>
+        <option>Elise</option>
+        <option>Evelynn</option>
+        <option>Ezreal</option>
+        <option>Fiddlesticks</option>
+        <option>Fiora</option>
+        <option>Fizz</option>
+        <option>Galio</option>
+        <option>Gangplank</option>
+        <option>Garen</option>
+        <option>Gragas</option>
+        <option>Graves</option>
+        <option>Hecarim</option>
+        <option>Heimerdinger</option>
+        <option>Irelia</option>
+        <option>Janna</option>
+        <option>Jarvan IV</option>
+        <option>Jax</option>
+        <option>Jayce</option>
+        <option>Karma</option>
+        <option>Karthus</option>
+        <option>Kassadin</option>
+        <option>Katarina</option>
+        <option>Kayle</option>
+        <option>Kennen</option>
+        <option>Kha'Zix</option>
+        <option>Kog'Maw</option>
+        <option>LeBlanc</option>
+        <option>Lee Sin</option>
+        <option>Leona</option>
+        <option>Lulu</option>
+        <option>Lux</option>
+        <option>Malphite</option>
+        <option>Malzahar</option>
+        <option>Maokai</option>
+        <option>Master Yi</option>
+        <option>Miss Fortune</option>
+        <option>Mordekaiser</option>
+        <option>Morgana</option>
+        <option>Nami</option>
+        <option>Nasus</option>
+        <option>Nautilus</option>
+        <option>Nidalee</option>
+        <option>Nocturne</option>
+        <option>Nunu</option>
+        <option>Olaf</option>
+        <option>Orianna</option>
+        <option>Pantheon</option>
+        <option>Poppy</option>
+        <option>Rammus</option>
+        <option>Renekton</option>
+        <option>Rengar</option>
+        <option>Riven</option>
+        <option>Rumble</option>
+        <option>Ryze</option>
+        <option>Sejuani</option>
+        <option>Shaco</option>
+        <option>Shen</option>
+        <option>Shyvana</option>
+        <option>Singed</option>
+        <option>Sion</option>
+        <option>Sivir</option>
+        <option>Skarner</option>
+        <option>Sona</option>
+        <option>Soraka</option>
+        <option>Swain</option>
+        <option>Syndra</option>
+        <option>Talon</option>
+        <option>Taric</option>
+        <option>Teemo</option>
+        <option>Tristana</option>
+        <option>Trundle</option>
+        <option>Tryndamere</option>
+        <option>Twisted Fate</option>
+        <option>Twitch</option>
+        <option>Udyr</option>
+        <option>Urgot</option>
+        <option>Varus</option>
+        <option>Vayne</option>
+        <option>Veigar</option>
+        <option>Vi</option>
+        <option>Viktor</option>
+        <option>Vladimir</option>
+        <option>Volibear</option>
+        <option>Warwick</option>
+        <option>Wukong</option>
+        <option>Xerath</option>
+        <option>Xin Zhao</option>
+        <option>Yorick</option>
+        <option>Zed</option>
+        <option>Ziggs</option>
+        <option>Zilean</option>
+        <option>Zyra</option>
+      </select>
+        <input id="team-1-ban-1-submit" type="submit" />
+        <br />
+        
+        <label>Ban 2:</label>
+        <select id="team-1-ban-2">
+        <option>Ahri</option>
+        <option>Akali</option>
+        <option>Alistar</option>
+        <option>Amumu</option>
+        <option>Anivia</option>
+        <option>Annie</option>
+        <option>Ashe</option>
+        <option>Blitzcrank</option>
+        <option>Brand</option>
+        <option>Caitlyn</option>
+        <option>Cassiopeia</option>
+        <option>Cho'Gath</option>
+        <option>Corki</option>
+        <option>Darius</option>
+        <option>Diana</option>
+        <option>Dr. Mundo</option>
+        <option>Draven</option>
+        <option>Elise</option>
+        <option>Evelynn</option>
+        <option>Ezreal</option>
+        <option>Fiddlesticks</option>
+        <option>Fiora</option>
+        <option>Fizz</option>
+        <option>Galio</option>
+        <option>Gangplank</option>
+        <option>Garen</option>
+        <option>Gragas</option>
+        <option>Graves</option>
+        <option>Hecarim</option>
+        <option>Heimerdinger</option>
+        <option>Irelia</option>
+        <option>Janna</option>
+        <option>Jarvan IV</option>
+        <option>Jax</option>
+        <option>Jayce</option>
+        <option>Karma</option>
+        <option>Karthus</option>
+        <option>Kassadin</option>
+        <option>Katarina</option>
+        <option>Kayle</option>
+        <option>Kennen</option>
+        <option>Kha'Zix</option>
+        <option>Kog'Maw</option>
+        <option>LeBlanc</option>
+        <option>Lee Sin</option>
+        <option>Leona</option>
+        <option>Lulu</option>
+        <option>Lux</option>
+        <option>Malphite</option>
+        <option>Malzahar</option>
+        <option>Maokai</option>
+        <option>Master Yi</option>
+        <option>Miss Fortune</option>
+        <option>Mordekaiser</option>
+        <option>Morgana</option>
+        <option>Nami</option>
+        <option>Nasus</option>
+        <option>Nautilus</option>
+        <option>Nidalee</option>
+        <option>Nocturne</option>
+        <option>Nunu</option>
+        <option>Olaf</option>
+        <option>Orianna</option>
+        <option>Pantheon</option>
+        <option>Poppy</option>
+        <option>Rammus</option>
+        <option>Renekton</option>
+        <option>Rengar</option>
+        <option>Riven</option>
+        <option>Rumble</option>
+        <option>Ryze</option>
+        <option>Sejuani</option>
+        <option>Shaco</option>
+        <option>Shen</option>
+        <option>Shyvana</option>
+        <option>Singed</option>
+        <option>Sion</option>
+        <option>Sivir</option>
+        <option>Skarner</option>
+        <option>Sona</option>
+        <option>Soraka</option>
+        <option>Swain</option>
+        <option>Syndra</option>
+        <option>Talon</option>
+        <option>Taric</option>
+        <option>Teemo</option>
+        <option>Tristana</option>
+        <option>Trundle</option>
+        <option>Tryndamere</option>
+        <option>Twisted Fate</option>
+        <option>Twitch</option>
+        <option>Udyr</option>
+        <option>Urgot</option>
+        <option>Varus</option>
+        <option>Vayne</option>
+        <option>Veigar</option>
+        <option>Vi</option>
+        <option>Viktor</option>
+        <option>Vladimir</option>
+        <option>Volibear</option>
+        <option>Warwick</option>
+        <option>Wukong</option>
+        <option>Xerath</option>
+        <option>Xin Zhao</option>
+        <option>Yorick</option>
+        <option>Zed</option>
+        <option>Ziggs</option>
+        <option>Zilean</option>
+        <option>Zyra</option>
+      </select>
+        <input id="team-1-ban-2-submit" type="submit" />
+        <br />
+        
+        <label>Ban 3:</label>
+        <select id="team-1-ban-3">
+        <option>Ahri</option>
+        <option>Akali</option>
+        <option>Alistar</option>
+        <option>Amumu</option>
+        <option>Anivia</option>
+        <option>Annie</option>
+        <option>Ashe</option>
+        <option>Blitzcrank</option>
+        <option>Brand</option>
+        <option>Caitlyn</option>
+        <option>Cassiopeia</option>
+        <option>Cho'Gath</option>
+        <option>Corki</option>
+        <option>Darius</option>
+        <option>Diana</option>
+        <option>Dr. Mundo</option>
+        <option>Draven</option>
+        <option>Elise</option>
+        <option>Evelynn</option>
+        <option>Ezreal</option>
+        <option>Fiddlesticks</option>
+        <option>Fiora</option>
+        <option>Fizz</option>
+        <option>Galio</option>
+        <option>Gangplank</option>
+        <option>Garen</option>
+        <option>Gragas</option>
+        <option>Graves</option>
+        <option>Hecarim</option>
+        <option>Heimerdinger</option>
+        <option>Irelia</option>
+        <option>Janna</option>
+        <option>Jarvan IV</option>
+        <option>Jax</option>
+        <option>Jayce</option>
+        <option>Karma</option>
+        <option>Karthus</option>
+        <option>Kassadin</option>
+        <option>Katarina</option>
+        <option>Kayle</option>
+        <option>Kennen</option>
+        <option>Kha'Zix</option>
+        <option>Kog'Maw</option>
+        <option>LeBlanc</option>
+        <option>Lee Sin</option>
+        <option>Leona</option>
+        <option>Lulu</option>
+        <option>Lux</option>
+        <option>Malphite</option>
+        <option>Malzahar</option>
+        <option>Maokai</option>
+        <option>Master Yi</option>
+        <option>Miss Fortune</option>
+        <option>Mordekaiser</option>
+        <option>Morgana</option>
+        <option>Nami</option>
+        <option>Nasus</option>
+        <option>Nautilus</option>
+        <option>Nidalee</option>
+        <option>Nocturne</option>
+        <option>Nunu</option>
+        <option>Olaf</option>
+        <option>Orianna</option>
+        <option>Pantheon</option>
+        <option>Poppy</option>
+        <option>Rammus</option>
+        <option>Renekton</option>
+        <option>Rengar</option>
+        <option>Riven</option>
+        <option>Rumble</option>
+        <option>Ryze</option>
+        <option>Sejuani</option>
+        <option>Shaco</option>
+        <option>Shen</option>
+        <option>Shyvana</option>
+        <option>Singed</option>
+        <option>Sion</option>
+        <option>Sivir</option>
+        <option>Skarner</option>
+        <option>Sona</option>
+        <option>Soraka</option>
+        <option>Swain</option>
+        <option>Syndra</option>
+        <option>Talon</option>
+        <option>Taric</option>
+        <option>Teemo</option>
+        <option>Tristana</option>
+        <option>Trundle</option>
+        <option>Tryndamere</option>
+        <option>Twisted Fate</option>
+        <option>Twitch</option>
+        <option>Udyr</option>
+        <option>Urgot</option>
+        <option>Varus</option>
+        <option>Vayne</option>
+        <option>Veigar</option>
+        <option>Vi</option>
+        <option>Viktor</option>
+        <option>Vladimir</option>
+        <option>Volibear</option>
+        <option>Warwick</option>
+        <option>Wukong</option>
+        <option>Xerath</option>
+        <option>Xin Zhao</option>
+        <option>Yorick</option>
+        <option>Zed</option>
+        <option>Ziggs</option>
+        <option>Zilean</option>
+        <option>Zyra</option>
+      </select>
+        <input id="team-1-ban-3-submit" type="submit" />
+        <br />
+        
+        <br />
+        <br />
+        <br />
+        
+        <label>Dyrus:</label>
+        <select id="team-1-dyrus">
+        <option>Ahri</option>
+        <option>Akali</option>
+        <option>Alistar</option>
+        <option>Amumu</option>
+        <option>Anivia</option>
+        <option>Annie</option>
+        <option>Ashe</option>
+        <option>Blitzcrank</option>
+        <option>Brand</option>
+        <option>Caitlyn</option>
+        <option>Cassiopeia</option>
+        <option>Cho'Gath</option>
+        <option>Corki</option>
+        <option>Darius</option>
+        <option>Diana</option>
+        <option>Dr. Mundo</option>
+        <option>Draven</option>
+        <option>Elise</option>
+        <option>Evelynn</option>
+        <option>Ezreal</option>
+        <option>Fiddlesticks</option>
+        <option>Fiora</option>
+        <option>Fizz</option>
+        <option>Galio</option>
+        <option>Gangplank</option>
+        <option>Garen</option>
+        <option>Gragas</option>
+        <option>Graves</option>
+        <option>Hecarim</option>
+        <option>Heimerdinger</option>
+        <option>Irelia</option>
+        <option>Janna</option>
+        <option>Jarvan IV</option>
+        <option>Jax</option>
+        <option>Jayce</option>
+        <option>Karma</option>
+        <option>Karthus</option>
+        <option>Kassadin</option>
+        <option>Katarina</option>
+        <option>Kayle</option>
+        <option>Kennen</option>
+        <option>Kha'Zix</option>
+        <option>Kog'Maw</option>
+        <option>LeBlanc</option>
+        <option>Lee Sin</option>
+        <option>Leona</option>
+        <option>Lulu</option>
+        <option>Lux</option>
+        <option>Malphite</option>
+        <option>Malzahar</option>
+        <option>Maokai</option>
+        <option>Master Yi</option>
+        <option>Miss Fortune</option>
+        <option>Mordekaiser</option>
+        <option>Morgana</option>
+        <option>Nami</option>
+        <option>Nasus</option>
+        <option>Nautilus</option>
+        <option>Nidalee</option>
+        <option>Nocturne</option>
+        <option>Nunu</option>
+        <option>Olaf</option>
+        <option>Orianna</option>
+        <option>Pantheon</option>
+        <option>Poppy</option>
+        <option>Rammus</option>
+        <option>Renekton</option>
+        <option>Rengar</option>
+        <option>Riven</option>
+        <option>Rumble</option>
+        <option>Ryze</option>
+        <option>Sejuani</option>
+        <option>Shaco</option>
+        <option>Shen</option>
+        <option>Shyvana</option>
+        <option>Singed</option>
+        <option>Sion</option>
+        <option>Sivir</option>
+        <option>Skarner</option>
+        <option>Sona</option>
+        <option>Soraka</option>
+        <option>Swain</option>
+        <option>Syndra</option>
+        <option>Talon</option>
+        <option>Taric</option>
+        <option>Teemo</option>
+        <option>Tristana</option>
+        <option>Trundle</option>
+        <option>Tryndamere</option>
+        <option>Twisted Fate</option>
+        <option>Twitch</option>
+        <option>Udyr</option>
+        <option>Urgot</option>
+        <option>Varus</option>
+        <option>Vayne</option>
+        <option>Veigar</option>
+        <option>Vi</option>
+        <option>Viktor</option>
+        <option>Vladimir</option>
+        <option>Volibear</option>
+        <option>Warwick</option>
+        <option>Wukong</option>
+        <option>Xerath</option>
+        <option>Xin Zhao</option>
+        <option>Yorick</option>
+        <option>Zed</option>
+        <option>Ziggs</option>
+        <option>Zilean</option>
+        <option>Zyra</option>
+      </select>
+  
+        <input id="team-1-dyrus-submit" type="submit" />
+        <br />
+        <label>TheOddOne:</label>
+        <select id="team-1-theoddone">
+        <option>Ahri</option>
+        <option>Akali</option>
+        <option>Alistar</option>
+        <option>Amumu</option>
+        <option>Anivia</option>
+        <option>Annie</option>
+        <option>Ashe</option>
+        <option>Blitzcrank</option>
+        <option>Brand</option>
+        <option>Caitlyn</option>
+        <option>Cassiopeia</option>
+        <option>Cho'Gath</option>
+        <option>Corki</option>
+        <option>Darius</option>
+        <option>Diana</option>
+        <option>Dr. Mundo</option>
+        <option>Draven</option>
+        <option>Elise</option>
+        <option>Evelynn</option>
+        <option>Ezreal</option>
+        <option>Fiddlesticks</option>
+        <option>Fiora</option>
+        <option>Fizz</option>
+        <option>Galio</option>
+        <option>Gangplank</option>
+        <option>Garen</option>
+        <option>Gragas</option>
+        <option>Graves</option>
+        <option>Hecarim</option>
+        <option>Heimerdinger</option>
+        <option>Irelia</option>
+        <option>Janna</option>
+        <option>Jarvan IV</option>
+        <option>Jax</option>
+        <option>Jayce</option>
+        <option>Karma</option>
+        <option>Karthus</option>
+        <option>Kassadin</option>
+        <option>Katarina</option>
+        <option>Kayle</option>
+        <option>Kennen</option>
+        <option>Kha'Zix</option>
+        <option>Kog'Maw</option>
+        <option>LeBlanc</option>
+        <option>Lee Sin</option>
+        <option>Leona</option>
+        <option>Lulu</option>
+        <option>Lux</option>
+        <option>Malphite</option>
+        <option>Malzahar</option>
+        <option>Maokai</option>
+        <option>Master Yi</option>
+        <option>Miss Fortune</option>
+        <option>Mordekaiser</option>
+        <option>Morgana</option>
+        <option>Nami</option>
+        <option>Nasus</option>
+        <option>Nautilus</option>
+        <option>Nidalee</option>
+        <option>Nocturne</option>
+        <option>Nunu</option>
+        <option>Olaf</option>
+        <option>Orianna</option>
+        <option>Pantheon</option>
+        <option>Poppy</option>
+        <option>Rammus</option>
+        <option>Renekton</option>
+        <option>Rengar</option>
+        <option>Riven</option>
+        <option>Rumble</option>
+        <option>Ryze</option>
+        <option>Sejuani</option>
+        <option>Shaco</option>
+        <option>Shen</option>
+        <option>Shyvana</option>
+        <option>Singed</option>
+        <option>Sion</option>
+        <option>Sivir</option>
+        <option>Skarner</option>
+        <option>Sona</option>
+        <option>Soraka</option>
+        <option>Swain</option>
+        <option>Syndra</option>
+        <option>Talon</option>
+        <option>Taric</option>
+        <option>Teemo</option>
+        <option>Tristana</option>
+        <option>Trundle</option>
+        <option>Tryndamere</option>
+        <option>Twisted Fate</option>
+        <option>Twitch</option>
+        <option>Udyr</option>
+        <option>Urgot</option>
+        <option>Varus</option>
+        <option>Vayne</option>
+        <option>Veigar</option>
+        <option>Vi</option>
+        <option>Viktor</option>
+        <option>Vladimir</option>
+        <option>Volibear</option>
+        <option>Warwick</option>
+        <option>Wukong</option>
+        <option>Xerath</option>
+        <option>Xin Zhao</option>
+        <option>Yorick</option>
+        <option>Zed</option>
+        <option>Ziggs</option>
+        <option>Zilean</option>
+        <option>Zyra</option>
+      </select>
+  
+        <input id="team-1-theoddone-submit" type="submit" />
+        <br />
+        <label>Chaox:</label>
+        <select id="team-1-chaox">
+        <option>Ahri</option>
+        <option>Akali</option>
+        <option>Alistar</option>
+        <option>Amumu</option>
+        <option>Anivia</option>
+        <option>Annie</option>
+        <option>Ashe</option>
+        <option>Blitzcrank</option>
+        <option>Brand</option>
+        <option>Caitlyn</option>
+        <option>Cassiopeia</option>
+        <option>Cho'Gath</option>
+        <option>Corki</option>
+        <option>Darius</option>
+        <option>Diana</option>
+        <option>Dr. Mundo</option>
+        <option>Draven</option>
+        <option>Elise</option>
+        <option>Evelynn</option>
+        <option>Ezreal</option>
+        <option>Fiddlesticks</option>
+        <option>Fiora</option>
+        <option>Fizz</option>
+        <option>Galio</option>
+        <option>Gangplank</option>
+        <option>Garen</option>
+        <option>Gragas</option>
+        <option>Graves</option>
+        <option>Hecarim</option>
+        <option>Heimerdinger</option>
+        <option>Irelia</option>
+        <option>Janna</option>
+        <option>Jarvan IV</option>
+        <option>Jax</option>
+        <option>Jayce</option>
+        <option>Karma</option>
+        <option>Karthus</option>
+        <option>Kassadin</option>
+        <option>Katarina</option>
+        <option>Kayle</option>
+        <option>Kennen</option>
+        <option>Kha'Zix</option>
+        <option>Kog'Maw</option>
+        <option>LeBlanc</option>
+        <option>Lee Sin</option>
+        <option>Leona</option>
+        <option>Lulu</option>
+        <option>Lux</option>
+        <option>Malphite</option>
+        <option>Malzahar</option>
+        <option>Maokai</option>
+        <option>Master Yi</option>
+        <option>Miss Fortune</option>
+        <option>Mordekaiser</option>
+        <option>Morgana</option>
+        <option>Nami</option>
+        <option>Nasus</option>
+        <option>Nautilus</option>
+        <option>Nidalee</option>
+        <option>Nocturne</option>
+        <option>Nunu</option>
+        <option>Olaf</option>
+        <option>Orianna</option>
+        <option>Pantheon</option>
+        <option>Poppy</option>
+        <option>Rammus</option>
+        <option>Renekton</option>
+        <option>Rengar</option>
+        <option>Riven</option>
+        <option>Rumble</option>
+        <option>Ryze</option>
+        <option>Sejuani</option>
+        <option>Shaco</option>
+        <option>Shen</option>
+        <option>Shyvana</option>
+        <option>Singed</option>
+        <option>Sion</option>
+        <option>Sivir</option>
+        <option>Skarner</option>
+        <option>Sona</option>
+        <option>Soraka</option>
+        <option>Swain</option>
+        <option>Syndra</option>
+        <option>Talon</option>
+        <option>Taric</option>
+        <option>Teemo</option>
+        <option>Tristana</option>
+        <option>Trundle</option>
+        <option>Tryndamere</option>
+        <option>Twisted Fate</option>
+        <option>Twitch</option>
+        <option>Udyr</option>
+        <option>Urgot</option>
+        <option>Varus</option>
+        <option>Vayne</option>
+        <option>Veigar</option>
+        <option>Vi</option>
+        <option>Viktor</option>
+        <option>Vladimir</option>
+        <option>Volibear</option>
+        <option>Warwick</option>
+        <option>Wukong</option>
+        <option>Xerath</option>
+        <option>Xin Zhao</option>
+        <option>Yorick</option>
+        <option>Zed</option>
+        <option>Ziggs</option>
+        <option>Zilean</option>
+        <option>Zyra</option>
+      </select>
+  
+        <input id="team-1-chaox-submit" type="submit" />
+        <br />
+        <label>XSpecial:</label>
+        <select id="team-1-xspecial">
+        <option>Ahri</option>
+        <option>Akali</option>
+        <option>Alistar</option>
+        <option>Amumu</option>
+        <option>Anivia</option>
+        <option>Annie</option>
+        <option>Ashe</option>
+        <option>Blitzcrank</option>
+        <option>Brand</option>
+        <option>Caitlyn</option>
+        <option>Cassiopeia</option>
+        <option>Cho'Gath</option>
+        <option>Corki</option>
+        <option>Darius</option>
+        <option>Diana</option>
+        <option>Dr. Mundo</option>
+        <option>Draven</option>
+        <option>Elise</option>
+        <option>Evelynn</option>
+        <option>Ezreal</option>
+        <option>Fiddlesticks</option>
+        <option>Fiora</option>
+        <option>Fizz</option>
+        <option>Galio</option>
+        <option>Gangplank</option>
+        <option>Garen</option>
+        <option>Gragas</option>
+        <option>Graves</option>
+        <option>Hecarim</option>
+        <option>Heimerdinger</option>
+        <option>Irelia</option>
+        <option>Janna</option>
+        <option>Jarvan IV</option>
+        <option>Jax</option>
+        <option>Jayce</option>
+        <option>Karma</option>
+        <option>Karthus</option>
+        <option>Kassadin</option>
+        <option>Katarina</option>
+        <option>Kayle</option>
+        <option>Kennen</option>
+        <option>Kha'Zix</option>
+        <option>Kog'Maw</option>
+        <option>LeBlanc</option>
+        <option>Lee Sin</option>
+        <option>Leona</option>
+        <option>Lulu</option>
+        <option>Lux</option>
+        <option>Malphite</option>
+        <option>Malzahar</option>
+        <option>Maokai</option>
+        <option>Master Yi</option>
+        <option>Miss Fortune</option>
+        <option>Mordekaiser</option>
+        <option>Morgana</option>
+        <option>Nami</option>
+        <option>Nasus</option>
+        <option>Nautilus</option>
+        <option>Nidalee</option>
+        <option>Nocturne</option>
+        <option>Nunu</option>
+        <option>Olaf</option>
+        <option>Orianna</option>
+        <option>Pantheon</option>
+        <option>Poppy</option>
+        <option>Rammus</option>
+        <option>Renekton</option>
+        <option>Rengar</option>
+        <option>Riven</option>
+        <option>Rumble</option>
+        <option>Ryze</option>
+        <option>Sejuani</option>
+        <option>Shaco</option>
+        <option>Shen</option>
+        <option>Shyvana</option>
+        <option>Singed</option>
+        <option>Sion</option>
+        <option>Sivir</option>
+        <option>Skarner</option>
+        <option>Sona</option>
+        <option>Soraka</option>
+        <option>Swain</option>
+        <option>Syndra</option>
+        <option>Talon</option>
+        <option>Taric</option>
+        <option>Teemo</option>
+        <option>Tristana</option>
+        <option>Trundle</option>
+        <option>Tryndamere</option>
+        <option>Twisted Fate</option>
+        <option>Twitch</option>
+        <option>Udyr</option>
+        <option>Urgot</option>
+        <option>Varus</option>
+        <option>Vayne</option>
+        <option>Veigar</option>
+        <option>Vi</option>
+        <option>Viktor</option>
+        <option>Vladimir</option>
+        <option>Volibear</option>
+        <option>Warwick</option>
+        <option>Wukong</option>
+        <option>Xerath</option>
+        <option>Xin Zhao</option>
+        <option>Yorick</option>
+        <option>Zed</option>
+        <option>Ziggs</option>
+        <option>Zilean</option>
+        <option>Zyra</option>
+      </select>
+  
+        <input id="team-1-xspecial-submit" type="submit" />
+        <br />
+        <label>Regi:</label>
+        <select id="team-1-regi">
+        <option>Ahri</option>
+        <option>Akali</option>
+        <option>Alistar</option>
+        <option>Amumu</option>
+        <option>Anivia</option>
+        <option>Annie</option>
+        <option>Ashe</option>
+        <option>Blitzcrank</option>
+        <option>Brand</option>
+        <option>Caitlyn</option>
+        <option>Cassiopeia</option>
+        <option>Cho'Gath</option>
+        <option>Corki</option>
+        <option>Darius</option>
+        <option>Diana</option>
+        <option>Dr. Mundo</option>
+        <option>Draven</option>
+        <option>Elise</option>
+        <option>Evelynn</option>
+        <option>Ezreal</option>
+        <option>Fiddlesticks</option>
+        <option>Fiora</option>
+        <option>Fizz</option>
+        <option>Galio</option>
+        <option>Gangplank</option>
+        <option>Garen</option>
+        <option>Gragas</option>
+        <option>Graves</option>
+        <option>Hecarim</option>
+        <option>Heimerdinger</option>
+        <option>Irelia</option>
+        <option>Janna</option>
+        <option>Jarvan IV</option>
+        <option>Jax</option>
+        <option>Jayce</option>
+        <option>Karma</option>
+        <option>Karthus</option>
+        <option>Kassadin</option>
+        <option>Katarina</option>
+        <option>Kayle</option>
+        <option>Kennen</option>
+        <option>Kha'Zix</option>
+        <option>Kog'Maw</option>
+        <option>LeBlanc</option>
+        <option>Lee Sin</option>
+        <option>Leona</option>
+        <option>Lulu</option>
+        <option>Lux</option>
+        <option>Malphite</option>
+        <option>Malzahar</option>
+        <option>Maokai</option>
+        <option>Master Yi</option>
+        <option>Miss Fortune</option>
+        <option>Mordekaiser</option>
+        <option>Morgana</option>
+        <option>Nami</option>
+        <option>Nasus</option>
+        <option>Nautilus</option>
+        <option>Nidalee</option>
+        <option>Nocturne</option>
+        <option>Nunu</option>
+        <option>Olaf</option>
+        <option>Orianna</option>
+        <option>Pantheon</option>
+        <option>Poppy</option>
+        <option>Rammus</option>
+        <option>Renekton</option>
+        <option>Rengar</option>
+        <option>Riven</option>
+        <option>Rumble</option>
+        <option>Ryze</option>
+        <option>Sejuani</option>
+        <option>Shaco</option>
+        <option>Shen</option>
+        <option>Shyvana</option>
+        <option>Singed</option>
+        <option>Sion</option>
+        <option>Sivir</option>
+        <option>Skarner</option>
+        <option>Sona</option>
+        <option>Soraka</option>
+        <option>Swain</option>
+        <option>Syndra</option>
+        <option>Talon</option>
+        <option>Taric</option>
+        <option>Teemo</option>
+        <option>Tristana</option>
+        <option>Trundle</option>
+        <option>Tryndamere</option>
+        <option>Twisted Fate</option>
+        <option>Twitch</option>
+        <option>Udyr</option>
+        <option>Urgot</option>
+        <option>Varus</option>
+        <option>Vayne</option>
+        <option>Veigar</option>
+        <option>Vi</option>
+        <option>Viktor</option>
+        <option>Vladimir</option>
+        <option>Volibear</option>
+        <option>Warwick</option>
+        <option>Wukong</option>
+        <option>Xerath</option>
+        <option>Xin Zhao</option>
+        <option>Yorick</option>
+        <option>Zed</option>
+        <option>Ziggs</option>
+        <option>Zilean</option>
+        <option>Zyra</option>
+      </select>
+  
+        <input id="team-1-regi-submit" type="submit" />
+        <br />
+        
+        <br />
+        <br />
+        <br />
+      </div>
+      
+      <div class="team-2">
+        <label>Team 1 (Purple):</label>
+        <select id="team-2">
+          <<option>CLG.EU</option>
+        </select>
+        
+        <br />
+        <br />
+        
+        <label>Ban 1:</label>
+        <select id="team-2-ban-1">
+        <option>Ahri</option>
+        <option>Akali</option>
+        <option>Alistar</option>
+        <option>Amumu</option>
+        <option>Anivia</option>
+        <option>Annie</option>
+        <option>Ashe</option>
+        <option>Blitzcrank</option>
+        <option>Brand</option>
+        <option>Caitlyn</option>
+        <option>Cassiopeia</option>
+        <option>Cho'Gath</option>
+        <option>Corki</option>
+        <option>Darius</option>
+        <option>Diana</option>
+        <option>Dr. Mundo</option>
+        <option>Draven</option>
+        <option>Elise</option>
+        <option>Evelynn</option>
+        <option>Ezreal</option>
+        <option>Fiddlesticks</option>
+        <option>Fiora</option>
+        <option>Fizz</option>
+        <option>Galio</option>
+        <option>Gangplank</option>
+        <option>Garen</option>
+        <option>Gragas</option>
+        <option>Graves</option>
+        <option>Hecarim</option>
+        <option>Heimerdinger</option>
+        <option>Irelia</option>
+        <option>Janna</option>
+        <option>Jarvan IV</option>
+        <option>Jax</option>
+        <option>Jayce</option>
+        <option>Karma</option>
+        <option>Karthus</option>
+        <option>Kassadin</option>
+        <option>Katarina</option>
+        <option>Kayle</option>
+        <option>Kennen</option>
+        <option>Kha'Zix</option>
+        <option>Kog'Maw</option>
+        <option>LeBlanc</option>
+        <option>Lee Sin</option>
+        <option>Leona</option>
+        <option>Lulu</option>
+        <option>Lux</option>
+        <option>Malphite</option>
+        <option>Malzahar</option>
+        <option>Maokai</option>
+        <option>Master Yi</option>
+        <option>Miss Fortune</option>
+        <option>Mordekaiser</option>
+        <option>Morgana</option>
+        <option>Nami</option>
+        <option>Nasus</option>
+        <option>Nautilus</option>
+        <option>Nidalee</option>
+        <option>Nocturne</option>
+        <option>Nunu</option>
+        <option>Olaf</option>
+        <option>Orianna</option>
+        <option>Pantheon</option>
+        <option>Poppy</option>
+        <option>Rammus</option>
+        <option>Renekton</option>
+        <option>Rengar</option>
+        <option>Riven</option>
+        <option>Rumble</option>
+        <option>Ryze</option>
+        <option>Sejuani</option>
+        <option>Shaco</option>
+        <option>Shen</option>
+        <option>Shyvana</option>
+        <option>Singed</option>
+        <option>Sion</option>
+        <option>Sivir</option>
+        <option>Skarner</option>
+        <option>Sona</option>
+        <option>Soraka</option>
+        <option>Swain</option>
+        <option>Syndra</option>
+        <option>Talon</option>
+        <option>Taric</option>
+        <option>Teemo</option>
+        <option>Tristana</option>
+        <option>Trundle</option>
+        <option>Tryndamere</option>
+        <option>Twisted Fate</option>
+        <option>Twitch</option>
+        <option>Udyr</option>
+        <option>Urgot</option>
+        <option>Varus</option>
+        <option>Vayne</option>
+        <option>Veigar</option>
+        <option>Vi</option>
+        <option>Viktor</option>
+        <option>Vladimir</option>
+        <option>Volibear</option>
+        <option>Warwick</option>
+        <option>Wukong</option>
+        <option>Xerath</option>
+        <option>Xin Zhao</option>
+        <option>Yorick</option>
+        <option>Zed</option>
+        <option>Ziggs</option>
+        <option>Zilean</option>
+        <option>Zyra</option>
+      </select>
+        <input id="team-2-ban-1-submit" type="submit" />
+        <br />
+        
+        <label>Ban 2:</label>
+        <select id="team-2-ban-2">
+        <option>Ahri</option>
+        <option>Akali</option>
+        <option>Alistar</option>
+        <option>Amumu</option>
+        <option>Anivia</option>
+        <option>Annie</option>
+        <option>Ashe</option>
+        <option>Blitzcrank</option>
+        <option>Brand</option>
+        <option>Caitlyn</option>
+        <option>Cassiopeia</option>
+        <option>Cho'Gath</option>
+        <option>Corki</option>
+        <option>Darius</option>
+        <option>Diana</option>
+        <option>Dr. Mundo</option>
+        <option>Draven</option>
+        <option>Elise</option>
+        <option>Evelynn</option>
+        <option>Ezreal</option>
+        <option>Fiddlesticks</option>
+        <option>Fiora</option>
+        <option>Fizz</option>
+        <option>Galio</option>
+        <option>Gangplank</option>
+        <option>Garen</option>
+        <option>Gragas</option>
+        <option>Graves</option>
+        <option>Hecarim</option>
+        <option>Heimerdinger</option>
+        <option>Irelia</option>
+        <option>Janna</option>
+        <option>Jarvan IV</option>
+        <option>Jax</option>
+        <option>Jayce</option>
+        <option>Karma</option>
+        <option>Karthus</option>
+        <option>Kassadin</option>
+        <option>Katarina</option>
+        <option>Kayle</option>
+        <option>Kennen</option>
+        <option>Kha'Zix</option>
+        <option>Kog'Maw</option>
+        <option>LeBlanc</option>
+        <option>Lee Sin</option>
+        <option>Leona</option>
+        <option>Lulu</option>
+        <option>Lux</option>
+        <option>Malphite</option>
+        <option>Malzahar</option>
+        <option>Maokai</option>
+        <option>Master Yi</option>
+        <option>Miss Fortune</option>
+        <option>Mordekaiser</option>
+        <option>Morgana</option>
+        <option>Nami</option>
+        <option>Nasus</option>
+        <option>Nautilus</option>
+        <option>Nidalee</option>
+        <option>Nocturne</option>
+        <option>Nunu</option>
+        <option>Olaf</option>
+        <option>Orianna</option>
+        <option>Pantheon</option>
+        <option>Poppy</option>
+        <option>Rammus</option>
+        <option>Renekton</option>
+        <option>Rengar</option>
+        <option>Riven</option>
+        <option>Rumble</option>
+        <option>Ryze</option>
+        <option>Sejuani</option>
+        <option>Shaco</option>
+        <option>Shen</option>
+        <option>Shyvana</option>
+        <option>Singed</option>
+        <option>Sion</option>
+        <option>Sivir</option>
+        <option>Skarner</option>
+        <option>Sona</option>
+        <option>Soraka</option>
+        <option>Swain</option>
+        <option>Syndra</option>
+        <option>Talon</option>
+        <option>Taric</option>
+        <option>Teemo</option>
+        <option>Tristana</option>
+        <option>Trundle</option>
+        <option>Tryndamere</option>
+        <option>Twisted Fate</option>
+        <option>Twitch</option>
+        <option>Udyr</option>
+        <option>Urgot</option>
+        <option>Varus</option>
+        <option>Vayne</option>
+        <option>Veigar</option>
+        <option>Vi</option>
+        <option>Viktor</option>
+        <option>Vladimir</option>
+        <option>Volibear</option>
+        <option>Warwick</option>
+        <option>Wukong</option>
+        <option>Xerath</option>
+        <option>Xin Zhao</option>
+        <option>Yorick</option>
+        <option>Zed</option>
+        <option>Ziggs</option>
+        <option>Zilean</option>
+        <option>Zyra</option>
+      </select>
+  
+        <input id="team-2-ban-2-submit" type="submit" />
+        <br />
+        
+        <label>Ban 3:</label>
+        <select id="team-2-ban-3">
+        <option>Ahri</option>
+        <option>Akali</option>
+        <option>Alistar</option>
+        <option>Amumu</option>
+        <option>Anivia</option>
+        <option>Annie</option>
+        <option>Ashe</option>
+        <option>Blitzcrank</option>
+        <option>Brand</option>
+        <option>Caitlyn</option>
+        <option>Cassiopeia</option>
+        <option>Cho'Gath</option>
+        <option>Corki</option>
+        <option>Darius</option>
+        <option>Diana</option>
+        <option>Dr. Mundo</option>
+        <option>Draven</option>
+        <option>Elise</option>
+        <option>Evelynn</option>
+        <option>Ezreal</option>
+        <option>Fiddlesticks</option>
+        <option>Fiora</option>
+        <option>Fizz</option>
+        <option>Galio</option>
+        <option>Gangplank</option>
+        <option>Garen</option>
+        <option>Gragas</option>
+        <option>Graves</option>
+        <option>Hecarim</option>
+        <option>Heimerdinger</option>
+        <option>Irelia</option>
+        <option>Janna</option>
+        <option>Jarvan IV</option>
+        <option>Jax</option>
+        <option>Jayce</option>
+        <option>Karma</option>
+        <option>Karthus</option>
+        <option>Kassadin</option>
+        <option>Katarina</option>
+        <option>Kayle</option>
+        <option>Kennen</option>
+        <option>Kha'Zix</option>
+        <option>Kog'Maw</option>
+        <option>LeBlanc</option>
+        <option>Lee Sin</option>
+        <option>Leona</option>
+        <option>Lulu</option>
+        <option>Lux</option>
+        <option>Malphite</option>
+        <option>Malzahar</option>
+        <option>Maokai</option>
+        <option>Master Yi</option>
+        <option>Miss Fortune</option>
+        <option>Mordekaiser</option>
+        <option>Morgana</option>
+        <option>Nami</option>
+        <option>Nasus</option>
+        <option>Nautilus</option>
+        <option>Nidalee</option>
+        <option>Nocturne</option>
+        <option>Nunu</option>
+        <option>Olaf</option>
+        <option>Orianna</option>
+        <option>Pantheon</option>
+        <option>Poppy</option>
+        <option>Rammus</option>
+        <option>Renekton</option>
+        <option>Rengar</option>
+        <option>Riven</option>
+        <option>Rumble</option>
+        <option>Ryze</option>
+        <option>Sejuani</option>
+        <option>Shaco</option>
+        <option>Shen</option>
+        <option>Shyvana</option>
+        <option>Singed</option>
+        <option>Sion</option>
+        <option>Sivir</option>
+        <option>Skarner</option>
+        <option>Sona</option>
+        <option>Soraka</option>
+        <option>Swain</option>
+        <option>Syndra</option>
+        <option>Talon</option>
+        <option>Taric</option>
+        <option>Teemo</option>
+        <option>Tristana</option>
+        <option>Trundle</option>
+        <option>Tryndamere</option>
+        <option>Twisted Fate</option>
+        <option>Twitch</option>
+        <option>Udyr</option>
+        <option>Urgot</option>
+        <option>Varus</option>
+        <option>Vayne</option>
+        <option>Veigar</option>
+        <option>Vi</option>
+        <option>Viktor</option>
+        <option>Vladimir</option>
+        <option>Volibear</option>
+        <option>Warwick</option>
+        <option>Wukong</option>
+        <option>Xerath</option>
+        <option>Xin Zhao</option>
+        <option>Yorick</option>
+        <option>Zed</option>
+        <option>Ziggs</option>
+        <option>Zilean</option>
+        <option>Zyra</option>
+      </select>
+  
+        <input id="team-2-ban-3-submit" type="submit" />
+        <br />
+        
+        <br />
+        <br />
+        <br />
+        
+        <label>Froggen:</label>
+        <select id="team-2-froggen">
+        <option>Ahri</option>
+        <option>Akali</option>
+        <option>Alistar</option>
+        <option>Amumu</option>
+        <option>Anivia</option>
+        <option>Annie</option>
+        <option>Ashe</option>
+        <option>Blitzcrank</option>
+        <option>Brand</option>
+        <option>Caitlyn</option>
+        <option>Cassiopeia</option>
+        <option>Cho'Gath</option>
+        <option>Corki</option>
+        <option>Darius</option>
+        <option>Diana</option>
+        <option>Dr. Mundo</option>
+        <option>Draven</option>
+        <option>Elise</option>
+        <option>Evelynn</option>
+        <option>Ezreal</option>
+        <option>Fiddlesticks</option>
+        <option>Fiora</option>
+        <option>Fizz</option>
+        <option>Galio</option>
+        <option>Gangplank</option>
+        <option>Garen</option>
+        <option>Gragas</option>
+        <option>Graves</option>
+        <option>Hecarim</option>
+        <option>Heimerdinger</option>
+        <option>Irelia</option>
+        <option>Janna</option>
+        <option>Jarvan IV</option>
+        <option>Jax</option>
+        <option>Jayce</option>
+        <option>Karma</option>
+        <option>Karthus</option>
+        <option>Kassadin</option>
+        <option>Katarina</option>
+        <option>Kayle</option>
+        <option>Kennen</option>
+        <option>Kha'Zix</option>
+        <option>Kog'Maw</option>
+        <option>LeBlanc</option>
+        <option>Lee Sin</option>
+        <option>Leona</option>
+        <option>Lulu</option>
+        <option>Lux</option>
+        <option>Malphite</option>
+        <option>Malzahar</option>
+        <option>Maokai</option>
+        <option>Master Yi</option>
+        <option>Miss Fortune</option>
+        <option>Mordekaiser</option>
+        <option>Morgana</option>
+        <option>Nami</option>
+        <option>Nasus</option>
+        <option>Nautilus</option>
+        <option>Nidalee</option>
+        <option>Nocturne</option>
+        <option>Nunu</option>
+        <option>Olaf</option>
+        <option>Orianna</option>
+        <option>Pantheon</option>
+        <option>Poppy</option>
+        <option>Rammus</option>
+        <option>Renekton</option>
+        <option>Rengar</option>
+        <option>Riven</option>
+        <option>Rumble</option>
+        <option>Ryze</option>
+        <option>Sejuani</option>
+        <option>Shaco</option>
+        <option>Shen</option>
+        <option>Shyvana</option>
+        <option>Singed</option>
+        <option>Sion</option>
+        <option>Sivir</option>
+        <option>Skarner</option>
+        <option>Sona</option>
+        <option>Soraka</option>
+        <option>Swain</option>
+        <option>Syndra</option>
+        <option>Talon</option>
+        <option>Taric</option>
+        <option>Teemo</option>
+        <option>Tristana</option>
+        <option>Trundle</option>
+        <option>Tryndamere</option>
+        <option>Twisted Fate</option>
+        <option>Twitch</option>
+        <option>Udyr</option>
+        <option>Urgot</option>
+        <option>Varus</option>
+        <option>Vayne</option>
+        <option>Veigar</option>
+        <option>Vi</option>
+        <option>Viktor</option>
+        <option>Vladimir</option>
+        <option>Volibear</option>
+        <option>Warwick</option>
+        <option>Wukong</option>
+        <option>Xerath</option>
+        <option>Xin Zhao</option>
+        <option>Yorick</option>
+        <option>Zed</option>
+        <option>Ziggs</option>
+        <option>Zilean</option>
+        <option>Zyra</option>
+      </select>
+  
+        <input id="team-2-froggen-submit" type="submit" />
+        <br />
+        <label>Krepo:</label>
+        <select id="team-2-krepo">
+        <option>Ahri</option>
+        <option>Akali</option>
+        <option>Alistar</option>
+        <option>Amumu</option>
+        <option>Anivia</option>
+        <option>Annie</option>
+        <option>Ashe</option>
+        <option>Blitzcrank</option>
+        <option>Brand</option>
+        <option>Caitlyn</option>
+        <option>Cassiopeia</option>
+        <option>Cho'Gath</option>
+        <option>Corki</option>
+        <option>Darius</option>
+        <option>Diana</option>
+        <option>Dr. Mundo</option>
+        <option>Draven</option>
+        <option>Elise</option>
+        <option>Evelynn</option>
+        <option>Ezreal</option>
+        <option>Fiddlesticks</option>
+        <option>Fiora</option>
+        <option>Fizz</option>
+        <option>Galio</option>
+        <option>Gangplank</option>
+        <option>Garen</option>
+        <option>Gragas</option>
+        <option>Graves</option>
+        <option>Hecarim</option>
+        <option>Heimerdinger</option>
+        <option>Irelia</option>
+        <option>Janna</option>
+        <option>Jarvan IV</option>
+        <option>Jax</option>
+        <option>Jayce</option>
+        <option>Karma</option>
+        <option>Karthus</option>
+        <option>Kassadin</option>
+        <option>Katarina</option>
+        <option>Kayle</option>
+        <option>Kennen</option>
+        <option>Kha'Zix</option>
+        <option>Kog'Maw</option>
+        <option>LeBlanc</option>
+        <option>Lee Sin</option>
+        <option>Leona</option>
+        <option>Lulu</option>
+        <option>Lux</option>
+        <option>Malphite</option>
+        <option>Malzahar</option>
+        <option>Maokai</option>
+        <option>Master Yi</option>
+        <option>Miss Fortune</option>
+        <option>Mordekaiser</option>
+        <option>Morgana</option>
+        <option>Nami</option>
+        <option>Nasus</option>
+        <option>Nautilus</option>
+        <option>Nidalee</option>
+        <option>Nocturne</option>
+        <option>Nunu</option>
+        <option>Olaf</option>
+        <option>Orianna</option>
+        <option>Pantheon</option>
+        <option>Poppy</option>
+        <option>Rammus</option>
+        <option>Renekton</option>
+        <option>Rengar</option>
+        <option>Riven</option>
+        <option>Rumble</option>
+        <option>Ryze</option>
+        <option>Sejuani</option>
+        <option>Shaco</option>
+        <option>Shen</option>
+        <option>Shyvana</option>
+        <option>Singed</option>
+        <option>Sion</option>
+        <option>Sivir</option>
+        <option>Skarner</option>
+        <option>Sona</option>
+        <option>Soraka</option>
+        <option>Swain</option>
+        <option>Syndra</option>
+        <option>Talon</option>
+        <option>Taric</option>
+        <option>Teemo</option>
+        <option>Tristana</option>
+        <option>Trundle</option>
+        <option>Tryndamere</option>
+        <option>Twisted Fate</option>
+        <option>Twitch</option>
+        <option>Udyr</option>
+        <option>Urgot</option>
+        <option>Varus</option>
+        <option>Vayne</option>
+        <option>Veigar</option>
+        <option>Vi</option>
+        <option>Viktor</option>
+        <option>Vladimir</option>
+        <option>Volibear</option>
+        <option>Warwick</option>
+        <option>Wukong</option>
+        <option>Xerath</option>
+        <option>Xin Zhao</option>
+        <option>Yorick</option>
+        <option>Zed</option>
+        <option>Ziggs</option>
+        <option>Zilean</option>
+        <option>Zyra</option>
+      </select>
+  
+        <input id="team-2-krepo-submit" type="submit" />
+        <br />
+        <label>YellowPete:</label>
+        <select id="team-2-yellowpete">
+        <option>Ahri</option>
+        <option>Akali</option>
+        <option>Alistar</option>
+        <option>Amumu</option>
+        <option>Anivia</option>
+        <option>Annie</option>
+        <option>Ashe</option>
+        <option>Blitzcrank</option>
+        <option>Brand</option>
+        <option>Caitlyn</option>
+        <option>Cassiopeia</option>
+        <option>Cho'Gath</option>
+        <option>Corki</option>
+        <option>Darius</option>
+        <option>Diana</option>
+        <option>Dr. Mundo</option>
+        <option>Draven</option>
+        <option>Elise</option>
+        <option>Evelynn</option>
+        <option>Ezreal</option>
+        <option>Fiddlesticks</option>
+        <option>Fiora</option>
+        <option>Fizz</option>
+        <option>Galio</option>
+        <option>Gangplank</option>
+        <option>Garen</option>
+        <option>Gragas</option>
+        <option>Graves</option>
+        <option>Hecarim</option>
+        <option>Heimerdinger</option>
+        <option>Irelia</option>
+        <option>Janna</option>
+        <option>Jarvan IV</option>
+        <option>Jax</option>
+        <option>Jayce</option>
+        <option>Karma</option>
+        <option>Karthus</option>
+        <option>Kassadin</option>
+        <option>Katarina</option>
+        <option>Kayle</option>
+        <option>Kennen</option>
+        <option>Kha'Zix</option>
+        <option>Kog'Maw</option>
+        <option>LeBlanc</option>
+        <option>Lee Sin</option>
+        <option>Leona</option>
+        <option>Lulu</option>
+        <option>Lux</option>
+        <option>Malphite</option>
+        <option>Malzahar</option>
+        <option>Maokai</option>
+        <option>Master Yi</option>
+        <option>Miss Fortune</option>
+        <option>Mordekaiser</option>
+        <option>Morgana</option>
+        <option>Nami</option>
+        <option>Nasus</option>
+        <option>Nautilus</option>
+        <option>Nidalee</option>
+        <option>Nocturne</option>
+        <option>Nunu</option>
+        <option>Olaf</option>
+        <option>Orianna</option>
+        <option>Pantheon</option>
+        <option>Poppy</option>
+        <option>Rammus</option>
+        <option>Renekton</option>
+        <option>Rengar</option>
+        <option>Riven</option>
+        <option>Rumble</option>
+        <option>Ryze</option>
+        <option>Sejuani</option>
+        <option>Shaco</option>
+        <option>Shen</option>
+        <option>Shyvana</option>
+        <option>Singed</option>
+        <option>Sion</option>
+        <option>Sivir</option>
+        <option>Skarner</option>
+        <option>Sona</option>
+        <option>Soraka</option>
+        <option>Swain</option>
+        <option>Syndra</option>
+        <option>Talon</option>
+        <option>Taric</option>
+        <option>Teemo</option>
+        <option>Tristana</option>
+        <option>Trundle</option>
+        <option>Tryndamere</option>
+        <option>Twisted Fate</option>
+        <option>Twitch</option>
+        <option>Udyr</option>
+        <option>Urgot</option>
+        <option>Varus</option>
+        <option>Vayne</option>
+        <option>Veigar</option>
+        <option>Vi</option>
+        <option>Viktor</option>
+        <option>Vladimir</option>
+        <option>Volibear</option>
+        <option>Warwick</option>
+        <option>Wukong</option>
+        <option>Xerath</option>
+        <option>Xin Zhao</option>
+        <option>Yorick</option>
+        <option>Zed</option>
+        <option>Ziggs</option>
+        <option>Zilean</option>
+        <option>Zyra</option>
+      </select>
+  
+        <input id="team-2-yellowpete-submit" type="submit" />
+        <br />
+        <label>Wickd:</label>
+        <select id="team-2-wickd">
+        <option>Ahri</option>
+        <option>Akali</option>
+        <option>Alistar</option>
+        <option>Amumu</option>
+        <option>Anivia</option>
+        <option>Annie</option>
+        <option>Ashe</option>
+        <option>Blitzcrank</option>
+        <option>Brand</option>
+        <option>Caitlyn</option>
+        <option>Cassiopeia</option>
+        <option>Cho'Gath</option>
+        <option>Corki</option>
+        <option>Darius</option>
+        <option>Diana</option>
+        <option>Dr. Mundo</option>
+        <option>Draven</option>
+        <option>Elise</option>
+        <option>Evelynn</option>
+        <option>Ezreal</option>
+        <option>Fiddlesticks</option>
+        <option>Fiora</option>
+        <option>Fizz</option>
+        <option>Galio</option>
+        <option>Gangplank</option>
+        <option>Garen</option>
+        <option>Gragas</option>
+        <option>Graves</option>
+        <option>Hecarim</option>
+        <option>Heimerdinger</option>
+        <option>Irelia</option>
+        <option>Janna</option>
+        <option>Jarvan IV</option>
+        <option>Jax</option>
+        <option>Jayce</option>
+        <option>Karma</option>
+        <option>Karthus</option>
+        <option>Kassadin</option>
+        <option>Katarina</option>
+        <option>Kayle</option>
+        <option>Kennen</option>
+        <option>Kha'Zix</option>
+        <option>Kog'Maw</option>
+        <option>LeBlanc</option>
+        <option>Lee Sin</option>
+        <option>Leona</option>
+        <option>Lulu</option>
+        <option>Lux</option>
+        <option>Malphite</option>
+        <option>Malzahar</option>
+        <option>Maokai</option>
+        <option>Master Yi</option>
+        <option>Miss Fortune</option>
+        <option>Mordekaiser</option>
+        <option>Morgana</option>
+        <option>Nami</option>
+        <option>Nasus</option>
+        <option>Nautilus</option>
+        <option>Nidalee</option>
+        <option>Nocturne</option>
+        <option>Nunu</option>
+        <option>Olaf</option>
+        <option>Orianna</option>
+        <option>Pantheon</option>
+        <option>Poppy</option>
+        <option>Rammus</option>
+        <option>Renekton</option>
+        <option>Rengar</option>
+        <option>Riven</option>
+        <option>Rumble</option>
+        <option>Ryze</option>
+        <option>Sejuani</option>
+        <option>Shaco</option>
+        <option>Shen</option>
+        <option>Shyvana</option>
+        <option>Singed</option>
+        <option>Sion</option>
+        <option>Sivir</option>
+        <option>Skarner</option>
+        <option>Sona</option>
+        <option>Soraka</option>
+        <option>Swain</option>
+        <option>Syndra</option>
+        <option>Talon</option>
+        <option>Taric</option>
+        <option>Teemo</option>
+        <option>Tristana</option>
+        <option>Trundle</option>
+        <option>Tryndamere</option>
+        <option>Twisted Fate</option>
+        <option>Twitch</option>
+        <option>Udyr</option>
+        <option>Urgot</option>
+        <option>Varus</option>
+        <option>Vayne</option>
+        <option>Veigar</option>
+        <option>Vi</option>
+        <option>Viktor</option>
+        <option>Vladimir</option>
+        <option>Volibear</option>
+        <option>Warwick</option>
+        <option>Wukong</option>
+        <option>Xerath</option>
+        <option>Xin Zhao</option>
+        <option>Yorick</option>
+        <option>Zed</option>
+        <option>Ziggs</option>
+        <option>Zilean</option>
+        <option>Zyra</option>
+      </select>
+  
+        <input id="team-2-wickd-submit" type="submit" />
+        <br />
+        <label>Snoopeh:</label>
+        <select id="team-2-snoopeh">
+        <option>Ahri</option>
+        <option>Akali</option>
+        <option>Alistar</option>
+        <option>Amumu</option>
+        <option>Anivia</option>
+        <option>Annie</option>
+        <option>Ashe</option>
+        <option>Blitzcrank</option>
+        <option>Brand</option>
+        <option>Caitlyn</option>
+        <option>Cassiopeia</option>
+        <option>Cho'Gath</option>
+        <option>Corki</option>
+        <option>Darius</option>
+        <option>Diana</option>
+        <option>Dr. Mundo</option>
+        <option>Draven</option>
+        <option>Elise</option>
+        <option>Evelynn</option>
+        <option>Ezreal</option>
+        <option>Fiddlesticks</option>
+        <option>Fiora</option>
+        <option>Fizz</option>
+        <option>Galio</option>
+        <option>Gangplank</option>
+        <option>Garen</option>
+        <option>Gragas</option>
+        <option>Graves</option>
+        <option>Hecarim</option>
+        <option>Heimerdinger</option>
+        <option>Irelia</option>
+        <option>Janna</option>
+        <option>Jarvan IV</option>
+        <option>Jax</option>
+        <option>Jayce</option>
+        <option>Karma</option>
+        <option>Karthus</option>
+        <option>Kassadin</option>
+        <option>Katarina</option>
+        <option>Kayle</option>
+        <option>Kennen</option>
+        <option>Kha'Zix</option>
+        <option>Kog'Maw</option>
+        <option>LeBlanc</option>
+        <option>Lee Sin</option>
+        <option>Leona</option>
+        <option>Lulu</option>
+        <option>Lux</option>
+        <option>Malphite</option>
+        <option>Malzahar</option>
+        <option>Maokai</option>
+        <option>Master Yi</option>
+        <option>Miss Fortune</option>
+        <option>Mordekaiser</option>
+        <option>Morgana</option>
+        <option>Nami</option>
+        <option>Nasus</option>
+        <option>Nautilus</option>
+        <option>Nidalee</option>
+        <option>Nocturne</option>
+        <option>Nunu</option>
+        <option>Olaf</option>
+        <option>Orianna</option>
+        <option>Pantheon</option>
+        <option>Poppy</option>
+        <option>Rammus</option>
+        <option>Renekton</option>
+        <option>Rengar</option>
+        <option>Riven</option>
+        <option>Rumble</option>
+        <option>Ryze</option>
+        <option>Sejuani</option>
+        <option>Shaco</option>
+        <option>Shen</option>
+        <option>Shyvana</option>
+        <option>Singed</option>
+        <option>Sion</option>
+        <option>Sivir</option>
+        <option>Skarner</option>
+        <option>Sona</option>
+        <option>Soraka</option>
+        <option>Swain</option>
+        <option>Syndra</option>
+        <option>Talon</option>
+        <option>Taric</option>
+        <option>Teemo</option>
+        <option>Tristana</option>
+        <option>Trundle</option>
+        <option>Tryndamere</option>
+        <option>Twisted Fate</option>
+        <option>Twitch</option>
+        <option>Udyr</option>
+        <option>Urgot</option>
+        <option>Varus</option>
+        <option>Vayne</option>
+        <option>Veigar</option>
+        <option>Vi</option>
+        <option>Viktor</option>
+        <option>Vladimir</option>
+        <option>Volibear</option>
+        <option>Warwick</option>
+        <option>Wukong</option>
+        <option>Xerath</option>
+        <option>Xin Zhao</option>
+        <option>Yorick</option>
+        <option>Zed</option>
+        <option>Ziggs</option>
+        <option>Zilean</option>
+        <option>Zyra</option>
+      </select>
+  
+        <input id="team-2-snoopeh-submit" type="submit" />
+        <br />
+        
+        <br />
+        <br />
+        <br />
+      </div>
+    </div>
+  </div>
+  
+  <div id="admin-game" class="box">
+    <div class="box-head">
+      <h3>Game</h3>
+      <a href="#" id="game-visibility">
+        <img src="style/arrow-up.png" />
+      </a>
+    </div>
+    <div id="admin-game-content">
+      <div class="team-1">
+        <div class="gold">
+          <span class="gold-count">0k</span>
+          <input type="button" class="gold-button-1" value="+0.1k" />
+          <br />
+          <input type="button" class="gold-button-1" value="+1.0k" />
+        </div>
+        
+        <br />
+        <br />
+        
+        <span class="team-1-tower">0 Towers</span>
+        <input type="button" id="team-1-tower-increase" value="+1" />
+        
+        <br />
+        
+        <span class="team-1-inhib">0 Inhibitors</span>
+        <input type="button" id="team-1-inhib-increase" value="+1" />
+        <input type="button" id="team-1-inhib-decrease" value="-1" />
+        
+        <br />
+        <br />
+        <br />
+        
+        <span class="team-1-kill-count">0 Kills</span>
+        <br />
+        <select id="team-1-player-1-list">
+          <option>Dyrus</option>
+          <option>Regi</option>
+          <option>TheOddOne</option>
+          <option>Chaox</option>
+          <option>XSpecial</option>
+        </select>
+        Killed
+        <select id="team-1-player-2-list">
+          <option>Krepo</option>
+          <option>YellowPete</option>
+          <option>Froggen</option>
+          <option>Snoopeh</option>
+          <option>Wickd</option>
+        </select>
+        <br />
+        <br />
+        <input id="team-1-kill" type="submit" />
+      </div>
+      <div class="team-2">
+        <div class="gold">
+          <span class="gold-count">0k</span>
+          <input type="button" class="gold-button-2" value="+0.1k" />
+          <br />
+          <input type="button" class="gold-button-2" value="+1.0k" />
+        </div>
+        
+        <br />
+        <br />
+        
+        <span class="team-2-tower">0 Towers</span>
+        <input type="button" id="team-2-tower-increase" value="+1" />
+        
+        <br />
+        
+        <span class="team-2-inhib">0 Inhibitors</span>
+        <input type="button" id="team-2-inhib-increase" value="+1" />
+        <input type="button" id="team-2-inhib-decrease" value="-1" />
+        
+        <br />
+        <br />
+        <br />
+        
+        <span class="team-2-kill-count">0 Kills</span>
+        <br />
+        <select id="team-2-player-1-list">
+          <option>Krepo</option>
+          <option>YellowPete</option>
+          <option>Froggen</option>
+          <option>Snoopeh</option>
+          <option>Wickd</option>
+        </select>
+        Killed
+        <select id="team-2-player-2-list">
+          <option>Dyrus</option>
+          <option>Regi</option>
+          <option>TheOddOne</option>
+          <option>Chaox</option>
+          <option>XSpecial</option>
+        </select>
+        <br />
+        <br />
+        <input id="team-2-kill" type="submit" />
+      </div>
+      
+      <div class="neutral">
+        <select id="dragon-list">
+          <option>TSM</option>
+          <option>CLG.EU</option>
+        </select>
+        has taken Dragon
+        <input id="dragon" type="submit" />
+        
+        <br />
+        <br />
+        <select id="baron-list">
+          <option>TSM</option>
+          <option>CLG.EU</option>
+        </select>
+        has taken Baron
+        <input id="baron" type="submit" />
+        
+        <br />
+        <br />
+        <br />
+        <br />
+              
+        <label>Game Winner:</label>
+        <select id="game-over-list">
+          <option>TSM</option>
+          <option>CLG.EU</option>
+        </select>
+        <input id="game-over" type="submit" />
+        
+        
+        <br />
+        <br />
+        <br />
+        <br />
+        
+        <label>Commentary</label>
+        <br />
+        <br />
+        <input type="text" id="card-title" placeholder="TITLE" />
+        <br />
+        <br />
+        <textarea id="card-content"></textarea>
+        <br />
+        <input type="submit" id="new-card" />
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section id="client" class="right">
+  <h2>Client Interface</h2>
+  
+  <div class="box">
+    <div class="scoreboard">
+      <div class="team-1">
+        <h4>TSM</h4>
+        <h3>0 (0k)</h3>
+        <span class="team-1-tower">0 Towers</span>
+        <span class="team-1-inhib">0 Inhibs</span>
+      </div>
+    
+      <div class="team-2">
+        <h4>CLG.EU</h4>
+        <h3>0 (0k)</h3>
+        <span class="team-2-tower">0 Towers</span>
+        <span class="team-2-inhib">0 Inhibs</span>
+      </div>
+    </div>
+  </div>
+  
+  <div class="updates">
+    
+  </div>
+</section>
+
+</body>
+</html>

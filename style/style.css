@@ -1,0 +1,197 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  font-family: helvetica;
+  font-size: 16px;
+  
+  background: url(background.png);
+  color: #dedede;
+  text-shadow: 0px -1px 1px black;
+}
+
+
+
+.left,
+.team-1 {
+  float: left;
+}
+
+.right,
+.team-2 {
+  float: right;
+}
+
+.box {
+  padding: 10px;
+  overflow: auto;
+  background: #fff;
+  box-shadow: 1px 1px 10px black;
+  color: #000;
+  text-shadow: 0px 0px 0px #fff;
+  margin-bottom: 30px;
+}
+
+
+
+
+
+header {
+  color: #fff;
+  background: #333;
+  overflow: auto;
+  border-bottom: 2px solid #000;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  float: left;
+  padding: 10px;
+}
+
+header ul {
+  float: right;
+  list-style: none;
+}
+
+header ul li {
+  
+}
+
+header ul li a {
+  text-decoration: none;
+  display: block;
+  color: #fff;
+  font-size: 18px;
+  padding: 20px;
+  border-left: 2px solid #000;
+}
+
+header ul li a:active,
+header ul li a:focus,
+header ul li a:hover {
+  background: #000;
+}
+
+
+
+#admin,
+#client {
+  width: 45%;
+  padding: 10px;
+}
+
+#admin h2, 
+#client h2 {
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+
+
+
+
+#admin .box-head {
+  margin: 10px 0px 20px 0px;
+  border-bottom: 2px solid #000;
+  overflow: auto;
+  
+}
+#admin h3 {
+  padding-bottom: 5px;
+  float: left;
+}
+
+#admin a img {
+  float: right;
+  padding: 5px;
+  width: 16px;
+  height: 16px;
+}
+
+#admin .team-1 {
+  float: left;
+  width: 50%;
+}
+
+#admin .team-2 {
+  float: right;
+  width: 50%;
+}
+
+#admin .neutral {
+  padding-top: 20px;
+  clear: both
+}
+
+
+#admin label {
+  display: block;
+  margin-top: 10px;
+}
+
+
+
+#admin .gold {
+
+}
+
+#admin .gold .gold-count {
+  float: left;
+  font-size: 36px;
+  margin-right: 15px;
+}
+
+#admin .gold input[type="button"] {
+  float: left;
+}
+
+#admin #card-title {
+  width: 80%;
+  padding: 10px;
+  margin: auto;
+  display: block;
+}
+
+#admin #card-content {
+  width: 80%;
+  height: 150px;
+  padding: 10px;
+  display: block;
+  margin: auto;
+}
+
+#admin #new-card {
+  text-align: center;
+  display: block;
+  margin-top: 20px;
+  margin: auto;
+  padding: 10px;
+  width: 30%;
+  height: 30px;
+}
+
+
+
+#client .scoreboard {
+  margin: auto;
+}
+
+#client .team-1,
+#client .team-2 {
+  width: 50%;
+}
+
+#client h4, h3 {
+  text-align: center;
+}
+
+#client span {
+  margin-top: 10px;
+  display: block;
+  text-align: center;
+}
